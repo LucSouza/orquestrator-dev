@@ -1,0 +1,31 @@
+{
+  "timeoutSec": 300,
+  "agyArgs": "--output-format text",
+  "vendors": {
+    "gemini": {
+      "type": "agy",
+      "model": "PREENCHER_COM_agy_models",
+      "enabled": true
+    },
+    "gptoss": {
+      "type": "agy",
+      "model": "PREENCHER_COM_agy_models",
+      "enabled": true
+    },
+    "deepseek": {
+      "type": "deepseek",
+      "model": "deepseek-chat",
+      "enabled": true,
+      "fallback": true
+    }
+  },
+  "jev": {
+    "enabled": true,
+    "provider": "vercel",
+    "model": "jev-1.14.0,
+    "dropDangerous": 0.8,
+    "flagSteer": 0.5,
+    "raiseRisk": 0.5,
+    "raiseSeverity": 0.6
+  }
+}
